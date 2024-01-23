@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		var SenaraiPertama = [2, 4, 12, 77];
+		var SenaraiKedua = [333, 222, 111];
+		var SenaraiKetiga = [5.1, 5.2, 5.6, 5.0];
+
+		jum1 = JumlahNo(SenaraiPertama);
+		jum2 = JumlahNo(SenaraiKetiga);
+		jum3 = JumlahNo(SenaraiPertama);
+
+		document.write(jum1 + "<br>");
+		document.write(jum2 + "<br>");
+		document.write(jum3 + "<br>");
+
+
+		function JumlahNo(nombor){
+
+			var i, bilNo, jumlah = 0;
+			bilNo = nombor.length;
+
+
+			for (i=0; i<bilNo; i++){
+				jumlah = jumlah + nombor[i];
+			}
+
+			return jumlah;
+		}
+
+
+
+	</script>
+</body>
+</html>
